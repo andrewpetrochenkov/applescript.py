@@ -6,9 +6,7 @@ setup(
     install_requires=[
         'only',
         'public',
-        'runcmd',
         'setuptools',
-        'temp',
     ],
     packages=[
         'applescript',
