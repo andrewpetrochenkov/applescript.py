@@ -1,4 +1,16 @@
-#!/usr/bin/env python
 from setuptools import setup
 
-setup()
+setup(
+    name='applescript',
+    version='2020.4.15',
+    install_requires=[
+        'only',
+        'public',
+        'runcmd',
+        'setuptools',
+        'temp',
+    ],
+    packages=[
+        'applescript',
+    ],
+)
