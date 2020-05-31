@@ -10,6 +10,6 @@ from ._run import _run
 
 @only.osx
 @public.add
-def run(applescript, background=False):
+def run(applescript, background=False, javascript=True):
     """run applescript file/string"""
-    return _run(applescript, background)
+    return _run(applescript, background, javascript)
