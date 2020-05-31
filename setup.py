@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='applescript',
-    version='2020.4.15',
+    version='2020.5.31',
     install_requires=[
         'only',
         'public',
