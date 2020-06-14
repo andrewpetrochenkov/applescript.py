@@ -1,12 +1,11 @@
-#!/usr/bin/env python
+__all__ = ['app']
+
 import only
-import public
 
 from ._run import _run
 
 
 @only.osx
-@public.add
 def app(appname, applescript, background=False):
     """execute applescript `tell application "VLC" ...`"""
     cmd = """tell app "%s"

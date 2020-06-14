@@ -1,7 +1,8 @@
 #!/usr/bin/env python
+__all__ = ['run']
+
 import os
 import only
-import public
 import subprocess
 
 import applescript.tell
@@ -9,7 +10,6 @@ import applescript.tell
 from ._run import _run
 
 @only.osx
-@public.add
 def run(applescript, background=False, javascript=True):
     """run applescript file/string"""
     return _run(applescript, background, javascript)
