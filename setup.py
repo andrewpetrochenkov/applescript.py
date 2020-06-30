@@ -1,12 +1,7 @@
-from setuptools import setup
+import setuptools
 
-setup(
+setuptools.setup(
     name='applescript',
-    version='2020.6.12',
-    install_requires=[
-        'setuptools',
-    ],
-    packages=[
-        'applescript',
-    ],
+    install_requires=open('requirements.txt').read().splitlines(),
+    packages=setuptools.find_packages()
 )
